@@ -86,4 +86,4 @@ print('Генерируем новую песню',words[0], words[1], words[2])
 # print(data_object)
 
 
-
+#работаю над пунктом D 
