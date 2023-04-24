@@ -54,6 +54,13 @@ for i in a:
     all_seconds+=second
 print('Три песни звучат', round(all_seconds/60), "минут")
 
+print('Пункт С для пункта А')
+n_words=random.randint(2,4)
+out=''
+for n in range(1,n_words):
+    out+=random.choice(random.choice(my_favorite_songs)[0].split(' '))+' '
+print('Генерируем новую песню', out)
+
 print(" Пункт B")
 b=dict.items(my_favorite_songs_dict)
 c=list(b)
@@ -65,3 +72,18 @@ for i in d:
     second=int(str(i[1]).partition('.')[2])+minutes*60
     all_seconds+=second  
 print('Три песни звучат', round(all_seconds/60), "минут")
+print('Пункт С для пункта В')
+nash_spisok=[]
+for x in my_favorite_songs_dict:
+    slova=x.split(' ')
+    for y in slova:
+        nash_spisok.append(y)
+words=random.sample(nash_spisok,3)
+print('Генерируем новую песню',words[0], words[1], words[2])
+# import datetime
+# a=6.50
+# data_object =datetime.datetime.strftime(a, "%M.%S")
+# print(data_object)
+
+
+
